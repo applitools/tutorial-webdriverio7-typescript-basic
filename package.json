@@ -1,0 +1,28 @@
+{
+  "name": "tutorial-webdriverio7-typescript-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register ./test/example-*.ts -t 300000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applitools/tutorial-webdriverio5-basic.git"
+  },
+  "author": "Applitools Team <team@applitools.com> (http://www.applitools.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/applitools/tutorial-webdriverio5-basic/issues"
+  },
+  "homepage": "https://github.com/applitools/tutorial-webdriverio5-basic#readme",
+  "devDependencies": {
+    "@applitools/eyes-webdriverio": "^5.31.2",
+    "@types/node": "^15.3.0",
+    "@wdio/mocha-framework": "^7.6.0",
+    "mocha": "^8.4.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webdriverio": "^7.6.0"
+  }
+}
