@@ -1,7 +1,7 @@
 'use strict';
 
 import { ClassicRunner, Eyes } from '@applitools/eyes-webdriverio';
-import { remote } from 'webdriverio';
+import { remote, RemoteOptions } from 'webdriverio';
 
 let browser: WebdriverIO.Browser;
 let eyes: Eyes;
@@ -18,7 +18,7 @@ describe('wdio5', function () {
         },
       },
       logLevel: 'silent',
-    } as any);
+    } as RemoteOptions);
 
     // Initialize the Runner for your test.
     const runner = new ClassicRunner();
@@ -65,7 +65,7 @@ describe('wdio5', function () {
   afterEach(async () => {
     // Close the browser
     await browser.deleteSession();
-    
+
     // If the test was aborted before eyes.close was called, ends the test as aborted.
     await eyes.abort();
   });
