@@ -6,7 +6,7 @@ import { remote, RemoteOptions } from 'webdriverio';
 let browser: WebdriverIO.Browser;
 let eyes: Eyes;
 
-describe('wdio5', function () {
+describe('wdio7', function () {
   beforeEach(async () => {
     // Use chrome browser
 
