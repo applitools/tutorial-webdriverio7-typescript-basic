@@ -26,7 +26,7 @@ describe('wdio5', function () {
     // Initialize the eyes SDK with configuration
     eyes = new Eyes(runner, {
       batch: {
-        name: 'Demo batch',
+        name: 'Demo Batch - WDIO 7 - Ultrafast TS',
       },
     });
   });
@@ -34,8 +34,8 @@ describe('wdio5', function () {
   it('Classic Runner Test', async () => {
     // Start the test by setting AUT's name, test name and viewport size (width X height)
     await eyes.open(browser, {
-      appName: 'Demo App',
-      testName: 'Smoke Test',
+      appName: 'Demo App - WDIO 7 - Ultrafast TS',
+      testName: 'Smoke Test - WDIO 7 - Ultrafast TS',
       viewportSize: {
         width: 800,
         height: 600,
